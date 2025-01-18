@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/index.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <script  src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp,container-queries"></script> 
+  <title>Sohail Portfolio</title>
+</head>
+<body>
+  <div id="no_net_container">
+    <h3>Something Went Wrong!</h3>
+    <p>Please check your internet connection</p>
+    <button onclick="page_reload()">Refresh</button>
+  </div>
+  
+  <span class="loader"></span>
+  
+  <div id="body">
+  <input type="checkbox" id="checkbox">
+
+	<header id="main" class="h-[50px] z-20 bg-slate-200 fixed w-screen">
+	  <h3 id="heading" class="font-['Montserrat'] fixed text-xl font-bold text-slate-700 uppercase md:ml-8 ">Md Sohail</h3>
+	  <label id="label" class="md:hidden" for="checkbox">
+	    <div id="show" class="md:mr-6">
+	      <div id="line" class=""></div>
+	    </div>
+	  </label>
+	  <nav class="fixed md:translate-y-0 md:h-[40px] md:rounded-sm md:flex md:justify-center z-[10] md:translate-x-0 md:w-[350px] md:relative md:ml-auto md:p-0 w-screen bg-slate-200 rounded-br-xl rounded-bl-xl ">
+	    <h3 class="font-['Montserrat'] md:hidden text-xl font-bold text-slate-700 uppercase border-b-2 border-slate-400 px-2 py-3 pt-5 md:px-6">Md Sohail</h3>
+	    <ul class="font-['Open_Sans'] font-semibold md:pr-4 flex md:flex-row md:items-center">
+	      <li class="text-slate-700 hover:text-slate-200 text-md md:text-lg w-content rounded-lg md:h-8 h-10 mx-2 md:mx-0 mt-2 md:mt-0 px-3 hover:bg-slate-500 md:px-3">
+	        <a href="#body" class="mx-auto">Home</a>
+	      </li>
+	      <li class="text-slate-700 hover:text-slate-200 text-md md:text-lg w-content rounded-lg md:h-8 h-10 mx-2 md:mx-0 px-3 hover:bg-slate-500 md:px-3">
+	        <a href="#about" class="mx-auto">About</a>
+	      </li>
+	      <li class="text-slate-700 hover:text-slate-200 text-md md:text-lg w-auto rounded-lg md:h-8 h-10 mx-2 md:mx-0 px-3 hover:bg-slate-500 md:px-3">
+	        <a href="#contactUs" class="mx-auto">Contact Us</a>
+	      </li>
+	    </ul>
+	  </nav>
+	</header>
+
+	<section id="home" class="md:pl-16 pl-4 lg:px-10 md:pr-6 overflow-hidden min-h-screen max-h-screen w-screen gap-2 grid place-content-center bg-slate-700 pr-6 pt-10">
+	  <div id="home_heading" class="text-3xl md:text-4xl lg:text-5xl font-bold md:pl-12 md:w-auto md:pr-12 md:pt-10 pl-2 md:mt-10 ">
+	    <p class="text-slate-200 tracking-wide md:tracking-wider md:leading-normal min-w-64 font-['Montserrat']">Hello, I'm a Front-end Developer</p>
+	  </div>
+	  <div id="home_content" class="p-1 pl-2 md:pl-12 max-[600px]:min-w-[270px] max-w-[600px] min-[600px]:pr-16">
+	    <p class="font-['Open_Sans'] leading-7 text-slate-300 p-0 md:mb-4 md:py-0 text-md md:text-lg">Hi, I'm Sohail, a passinate front-end developer specializing in translating design concepts into seamless and interactive web experiences using HTML, CSS and JavaScript</p>
+	    <button class="font-['Montserrat'] font-bold shadow-lg bg-red-500 w-auto md:w-auto text-sm md:text-lg mt-4 text-slate-200 p-2 px-4 rounded-lg hover:bg-red-600 active:bg-red-700"><a href="sohail_resume_1.jpg" download="sohail_resume_1.jpg" >Download Resume</a></button>
+	  </div> 
+	  <div id="home_img" class="max-[600px]:hidden float-right md:block rounded-full md:overflow-visible translate-x-0 md:-translate-x-8 lg:-translate-x-16  md:bg-slate-600 h-72 w-72 md:h-[395px] md:w-[395px] md:pb-4 md:mt-28  md:mr-12 z-[10] ">
+	    <img height="100%" width="100%" src="img.png" alt="img" loading="lazy"
+	      class=" md:drop-shadow-[0_0px_15px_rgba(255,255,255,0.2)] md:h-[400px] md:w-[400px] min-w-56 min-w-56 sm:relative md:absolute z-[10]">
+	  </div>
+	</section>
+	
+	<section id="about" class="md:max-h-[638px] px-4 md:min-h-[572px] md:grid md:place-content-center md:gap-8 md:pb-8 pt-0 w-screen bg-slate-800">
+	  <p id="skill_heading" class="text-center font-['Montserrat'] max-h-10 h-10 tracking-wider text-4xl md:text-5xl font-bold mx-auto text-slate-200 py-12 p-3">Skills Set</p>
+	  <div id="skill_grid_container" class="pb-8 max-h-[350px] min-h-[350px] max-w-[400px] p-3 px-0 md:p-0 md:pr-0 md:pt-7 pt-7 grid mx-auto">
+	    <div class="bg-slate-700 max-h-[300px] min-h-[300px] rounded-md border-0 border-slate-400 px-6 md:m-0">
+	      <h3 class="font-['poppins'] mt-2 tracking-wider text-slate-100 py-4 mx-auto  font-bold h-12 text-2xl md:text-[28px] grid place-content-center">Front-End</h3>
+	      <div class=" mt-2 mx-auto h-[210px] bg-slate-800 rounded-md">
+	        <div class="flex items-center justify-evenly pt-6  px-3 py-2">
+	          <p class="font-['Open_Sans'] mr-auto text-slate-300 text-sm md:text-md">Abode Photoshop</p>
+	          <div id="meter1" class="h-2 min-w-28 max-w-32 bg-white rounded-full"> </div>  
+	        </div>
+	        <div class="flex items-center justify-evenly px-3 py-2">
+	          <p class="font-['poppins'] mr-auto text-slate-300 text-sm md:text-md">Html, Css</p>
+	          <div id="meter2" class="relative h-2 min-w-28 max-w-32 bg-white rounded-full"> </div>  
+	        </div>
+	        <div class="flex items-center justify-evenly px-3 py-2">
+	          <p class="font-['poppins'] mr-auto text-slate-300 text-sm md:text-md">JavaScript</p>
+	          <div id="meter3" class="relative h-2 min-w-28 max-w-32 bg-white rounded-full"> </div>  
+	        </div>
+	        <div class="flex items-center justify-evenly px-3 py-2">
+	          <p class="font-['poppins'] mr-auto text-slate-300 text-sm md:text-md">Tailwind Css</p>
+	          <div id="meter4" class="relative h-2 min-w-28 max-w-32 bg-white rounded-full"> </div>  
+	        </div>
+	        <div class="flex items-center justify-evenly px-3 py-2">
+	          <p class="font-['poppins'] mr-auto text-slate-300 text-sm md:text-md">React Js</p>
+	          <div id="meter5" class="relative h-2 min-w-28  max-w-32 bg-white rounded-full"> </div>  
+	        </div>
+	      </div>
+	    </div>
+	  </div>
+	  <div id="project_container" class="pb-8 p-3 px-0 md:p-0 md:pt-7">
+	    <div id="project_grid" class="mx-auto px-6 max-[500px]:px-3 min-w-[300px] max-w-[400px] shadow-[0_0px_1px_0px_rgba(250,250,250,0.2)] pb-4 bg-slate-800 rounded-md border-2 border-slate-500 min-h-[300px] md:min-h-[300px]">
+	      <h3 class="font-['poppins'] mt-2 tracking-wider text-slate-100 py-4 mx-auto font-bold h-12 text-2xl md:text-[28px] grid place-content-center">My Top 3 Projects</h3>
+	      <div class="rounded-xl p-2 md:max-w-[350px] mt-2 mx-auto grid place-content-center bg-slate-500">
+	        <div id="project1" class="flex flex-wrap gap-3 items-center justify-start bg-slate-900 rounded-md hover:bg-slate-700 md:hover:max-h-[200px]">
+	          <div class="font-['Montserrat'] font-bold h-5 w-5 text-slate-300 bg-red-500 rounded-full grid place-content-center text-sm">1</div>  
+	          <p class="font-['Montserrat'] text-slate-300 text-md font-semibold tracking-wider">Tik-Tak-Toe Game</p>
+	          <div id="description1" class="font-['Open_Sans'] text-slate-200 text-sm pt-3 tracking-wider">
+	            <span class="font-semibold text-amber-400">Project:</span> Tik-Tak-Toe Game,<br>
+	            <span class="font-semibold text-amber-400">Technologies:</span> HTML, CSS And  JavaScript,<br>
+	            <span class="font-semibold text-amber-400">Description:</span> Developed A Tik-Tak-Toe Game Using Html, css And JavaScript,<br>
+	            <span class="font-semibold text-amber-400">Here's Link:</span><a href="https://md-sohail-1.github.io/Tik-Tak-Toe-Game/"> Tik-Tak-Toe.</a> 
+	          </div>
+	        </div>
+	        <div id="project2" class="mt-2 pl-3 pt-3 flex flex-wrap gap-3 items-center justify-start bg-slate-900 rounded-md hover:bg-slate-700 md:hover:max-h-[220px]">
+	          <div class="font-['Montserrat'] font-bold h-5 w-5 bg-red-500 text-slate-300 rounded-full grid place-content-center text-sm">2</div>  
+	          <p class="font-['Montserrat'] text-slate-300 text-md font-semibold tracking-wider">Movie Media</p>
+	          <div id="description2" class="font-['Open_Sans'] text-slate-200 text-sm pt-3 tracking-wider">
+	            <span class="font-semibold text-amber-400">Project:</span> Movie Media<br>
+	            <span class="font-semibold text-amber-400">Technologies:</span> HTML, CSS, JavaScript, Tailwind, ReactJs and API<br>
+	            <span class="font-semibold text-amber-400">Description:</span> Developed A Movie Media Using Html, Css, JavaScript, Tailwind Css and React Js<br>
+	            <span class="font-semibold text-amber-400">Here's Link:</span><a href="#"> Movie Media</a> 
+	          </div>
+	        </div>
+	        <div id="project3" class="mt-2 pl-3 pt-3 flex flex-wrap gap-3 items-center justify-start bg-slate-900 rounded-md hover:bg-slate-700 md:hover:max-h-[180px]">
+	          <div class="font-['Montserrat'] font-bold h-5 w-5 bg-red-500 text-slate-300 rounded-full grid place-content-center text-sm">3</div>  
+	          <p class="font-['Montserrat'] text-slate-300 text-md font-semibold tracking-wider">Quiz App</p>
+	          <div id="description3" class="font-['Open_Sans'] text-slate-200 text-sm pt-3 tracking-wider">
+	            <span class="font-semibold text-amber-400">Project:</span> Quiz App<br>
+	            <span class="font-semibold text-amber-400">Technologies:</span> HTML, CSS, JavaScript<br>
+	            <span class="font-semibold text-amber-400">Description:</span> Developed A Quiz App Using Html, Css And JavaScript<br>
+	            <span class="font-semibold text-amber-400">Here's Link:</span><a href="#"> Quiz App</a> 
+	          </div>
+	        </div>
+	      </div>
+	    </div>
+	  </div>
+	</section>
+	
+	<section id="contactUs" class="py-6 md:py-20 px-4 p-1 gap-8 w-screen bg-slate-700 md:grid md:min-h-[560px] md:max-h-screen">
+	  <aside class="min-h-[330px] max-h-[350px] max-w-[390px] shadow-[0_0px_20px_0px_rgba(250,250,250,0.2)] border-2 border-slate-500 rounded-lg py-2 px-2 grid gap-1 place-content-center bg-slate-700">
+	    <h3 class="font-['Montserrat'] mx-auto tracking-widest uppercase mb-1 pt-4 text-2xl text-slate-100 font-bold">Contact Us</h3>
+	    <p class="font-['Open_Sans'] px-3 contact-us text-center text-sm  pb-2 mb-2 center text-slate-400">If you are intersted in our design and product please contact to us. we will reply to you, or visit our website</p>
+	    <h3 class="font-['Montserrat'] mx-auto tracking-widest uppercase mb-1 text-2xl text-slate-100 font-bold">Address</h3>
+	    <p class="font-['Open_Sans'] mx-auto text-sm pb-2 mb-2 text-slate-400 text-center"><i class="fa-solid fa-location-dot text-xl pr-1 md:pr-2 text-red-400"></i>Shivpuri, Sagarpur New Delhi, Delhi-46</p>
+	    <h3 class="font-['Montserrat'] mx-auto tracking-widest uppercase mb-1 text-2xl text-slate-100 font-bold">E-Mail</h3>
+	    <p class="font-['Open_Sans'] mx-auto text-sm pb-2 mb-2 text-slate-400"><i class="fa-solid fa-envelope text-xl pr-1 md:pr-2 text-blue-500"></i>sohil931376@gmail.com</p>
+	  </aside>
+ 	  <form class="min-h-[330px] max-h-[350px]  max-w-[390px] grid place-content-center bg-gray-300 py-2 pb-4 rounded-lg">
+	    <h3 class="font-serif uppercase text-center mt-2 p-2 pb-4 text-slate-700 font-bold tracking-widest text-2xl ">Contact Form</h3>
+	    <input id="input_name" class="font-['Montserrat'] font-[500] text-md w-64 md:w-[320px] placeholder:italic placeholder-slate-500 focus:ring-0 text-slate-800 mb-2 md:mb-1 pl-0 pb-1 pt-2 focus:outline-0" type="text" placeholder="Your Name" autocomplete="false" required=""/>
+	    <input id="input_number" class="font-['Montserrat'] font-[500] text-md placeholder:italic placeholder-slate-500 focus:ring-0 text-slate-800 md:mb-1 mb-2 pl-0 pb-1 pt-2 " type="number" placeholder="Your Number" autocomplete="false" required=""/>
+	    <input id="input_email" class="font-['Montserrat'] font-[500] text-md placeholder:italic placeholder-slate-500 focus:ring-0 text-slate-800 md:mb-1 mb-2 pl-0 pb-1 pt-2" type="email" placeholder="Your E-Mail" autocomplete="false" required=""/>
+	    <textarea id="input_message" class="h-10 font-['Montserrat'] font-[500] text-md placeholder:italic placeholder-slate-500 focus:ring-0 text-slate-800 pl-0 pt-2 pb-1 bg-red-300" placeholder="Your Message" autocomplete="false" required=""></textarea>
+	    <button type="submit" class="font-['Open_sans'] font-bold tracking-wide h-10 bg-slate-600 hover:bg-indigo-600 active:bg-indigo-700 text-slate-200 rounded-full mt-6" id="submit_btn">Send Message</button>
+	  </form>
+	</section>
+	
+  <footer id="footer" class="h-10 text-slate-700 flex items-center justify-center md:gap-8 gap-4 text-xl w-screen bg-slate-200">
+    <span class="font-['Open_Sans'] text-sm">&copy; 2024. MD Sohail. Reserved All Rights.</span>
+  </footer>
+  </div>
+  <script src="https://smtpjs.com/v3/smtp.js"></script>
+  <script type="text/javascript" src="js/index.js"></script>
+</body>
+</html>
